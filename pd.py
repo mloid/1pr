@@ -1,5 +1,6 @@
-import csv
+# https://pyneng.readthedocs.io/ru/latest/book/17_serialization/csv.html#id3
 
+import csv
 
 #СОЗДАНИЕ НОВОЙ ТАБЛИЦЫ
 
@@ -24,6 +25,9 @@ with open('sw_data.csv') as f:
     for row in reader:
         print(row)
 
+        
+
+# https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html
 
 #    _~_
 #   (o o)
