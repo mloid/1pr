@@ -17,6 +17,14 @@ with open(tablename+'.csv', 'w') as f:
     for row in data:
         writer.writerow(row)
        
+#ЧТЕНИЕ СТАРОЙ ТАБЛИЦЫ
+
+with open('sw_data.csv') as f:
+    reader = csv.reader(f)
+    for row in reader:
+        print(row)
+
+
 #    _~_
 #   (o o)
 #  /  V  \
