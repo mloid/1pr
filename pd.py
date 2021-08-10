@@ -61,6 +61,10 @@ result = df1.append(df2)
 
 data.to_csv('out.csv',index=False)
 
+# прочитать csv таблицу
+
+data = pd.read_csv('sw_data.csv')
+
 
 #    _~_
 #   (o o)
