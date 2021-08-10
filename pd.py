@@ -17,6 +17,7 @@ with open(tablename+'.csv', 'w') as f:
     writer = csv.writer(f)
     for row in data:
         writer.writerow(row)
+#в pandas более подходящий вариант
        
 #ЧТЕНИЕ СТАРОЙ ТАБЛИЦЫ
 
@@ -55,6 +56,10 @@ df2 = pd.DataFrame(
 # чтобы добавились столбцы надо чтобы совпадали номера столбцов
 
 result = df1.append(df2) 
+
+# сохранение таблицы в формате csv
+
+data.to_csv('out.csv',index=False)
 
 
 #    _~_
